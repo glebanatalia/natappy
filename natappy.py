@@ -8,8 +8,7 @@ import json
 
 LOCK = threading.Lock()
 home = expanduser("~")
-
-
+#hfdfh
 
 class Blogger():
      def __init__(self, name , facebook_username, instagram_username, twitter_username):
@@ -19,7 +18,6 @@ class Blogger():
          self.name = name
          
 obama = Blogger('Obama','barackobama','barackobama','barackobama')
-
 
 
 def request_more_media(next_, direction):  
@@ -35,7 +33,6 @@ def request_more_media(next_, direction):
         return [],None       
 
 
-
 def browse_posts_in_direction(root, direction):
     counter=0
     collected = []
@@ -45,7 +42,6 @@ def browse_posts_in_direction(root, direction):
         root = answer[1]
         counter+=1 
     return collected
-
 
 
 def pagination_fb(blogger,logg_details,FACEBOOK_LIMIT = 20):
